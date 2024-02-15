@@ -5,6 +5,9 @@ import androidx.annotation.NonNull;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Clase que representa a un usuario en el sistema.
+ */
 public class User {
 
     private Long id;
@@ -18,8 +21,25 @@ public class User {
     private List<User> followers;
     private Role role;
 
+    /**
+     * Constructor por defecto de la clase User.
+     */
     public User() {}
 
+    /**
+     * Constructor de la clase User que inicializa todos los atributos.
+     *
+     * @param id          El ID del usuario.
+     * @param username    El nombre de usuario del usuario.
+     * @param password    La contraseña del usuario.
+     * @param email       El correo electrónico del usuario.
+     * @param createDate  La fecha de creación del usuario.
+     * @param description La descripción del usuario.
+     * @param posts       La lista de publicaciones del usuario.
+     * @param following   La lista de usuarios que sigue el usuario.
+     * @param followers   La lista de usuarios seguidores del usuario.
+     * @param role        El rol del usuario en el sistema.
+     */
     public User(Long id, String username, String password, String email, Date createDate,
                 String description, List<Post> posts, List<User> following, List<User> followers,
                 Role role) {
@@ -34,6 +54,9 @@ public class User {
         this.followers = followers;
         this.role = role;
     }
+
+    // Getters y setters para los atributos
+
 
     public Long getId() {
         return id;
@@ -115,16 +138,13 @@ public class User {
         this.role = role;
     }
 
-
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
-                ", createDate=" + createDate +
                 ", description='" + description + '\'' +
-                ", role=" + role +
                 '}';
     }
 }

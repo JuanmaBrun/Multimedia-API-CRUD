@@ -5,41 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
-    tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/form_textFieldName"
-        android:hint="@string/form_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-    />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/form_textFieldBranch"
-        android:hint="@string/form_branch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        />
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/form_textFieldLocation"
-        android:hint="@string/form_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        />
-    </LinearLayout>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/form_buttonSave"
-        android:text="@string/button_save_employee"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    tools:context=".EditFragment">
 
 </RelativeLayout>
